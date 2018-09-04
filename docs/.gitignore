@@ -1,9 +1,0 @@
-node_modules/
-_book/
-*.swp
-docs/cover.jpg
-docs/cover.xcf
-docs/*git*
-docs/*.sh
-*.pdf
-

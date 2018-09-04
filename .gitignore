@@ -2,6 +2,7 @@ node_modules/
 _book/
 *.swp
 *.pdf
+docs/.gitignore
 docs/cover.jpg
 docs/cover.xcf
 docs/package-lock.json
