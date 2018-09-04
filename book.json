@@ -1,0 +1,13 @@
+{
+  "title": "CppGeeks Core Guide v1.0.0",
+	"language": "vi",
+	"plugins": [""],
+	"pluginsConfig": {
+  	"fontsettings": {
+    	"theme": "night",
+      "family": "serif",
+      "size": 2
+  	}
+	}
+}
+

@@ -1,0 +1,14 @@
+{
+  "name": "cppgeeks_core_guide",
+  "version": "1.0.0",
+  "description": "CppGeeks Core Guide",
+  "main": "index.js",
+  "author": "Manh NT (ntmanh.net)",
+  "scripts": {
+    "prepare": "gitbook install",
+    "start": "npm run prepare && gitbook serve",
+    "build": "rm docs -rf && gitbook build && cp _book docs -r",
+    "pdf": "gitbook pdf"
+  },
+  "dependencies": {}
+}
