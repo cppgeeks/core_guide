@@ -25,3 +25,9 @@ Sử dụng ít nhất một trong các thư viện sau:
 - JSON: [JSON for Modern C++](https://nlohmann.github.io/json/)
 - GUI: [Dear ImGui](https://github.com/ocornut/imgui)
 
+## Một số hướng dẫn
+
+### CMake
+- [Guide](https://cliutils.gitlab.io/modern-cmake/)
+- [Video](https://www.youtube.com/playlist?list=PLK6MXr8gasrGmIiSuVQXpfFuE1uPT615s)
+
