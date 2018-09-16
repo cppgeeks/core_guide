@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Kết nối mạng DH-FPT trên Linux · CppGeeks Core Guide v1.0.0</title>
+        <title>Phát triển trên Windows · CppGeeks Core Guide v1.0.0</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Linux_network.html" />
     
-    <link rel="prev" href="Windows_dev.html" />
+    
+    <link rel="prev" href="Thu_thach.html" />
     
 
     </head>
@@ -132,7 +134,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="Windows_dev.html">
+        <li class="chapter active" data-level="1.3" data-path="Windows_dev.html">
             
                 <a href="Windows_dev.html">
             
@@ -145,7 +147,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="Linux_network.html">
+        <li class="chapter " data-level="1.4" data-path="Linux_network.html">
             
                 <a href="Linux_network.html">
             
@@ -188,7 +190,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Kết nối mạng DH-FPT trên Linux</a>
+        <a href=".." >Phát triển trên Windows</a>
     </h1>
 </div>
 
@@ -203,16 +205,54 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="k&#x1EBF;t-n&#x1ED1;i-m&#x1EA1;ng-dh-fpt-tr&#xEA;n-linux">K&#x1EBF;t n&#x1ED1;i m&#x1EA1;ng DH-FPT tr&#xEA;n Linux</h1>
-<p>H&#x1B0;&#x1EDB;ng d&#x1EAB;n n&#xE0;y d&#xF9;ng cho c&#xE1;c Linux h&#x1ECD; Debian (Debian, Ubuntu, Linux Mint, ...)</p>
-<h2 id="1-c&#xE0;i-&#x111;&#x1EB7;t-wpa-supplicant">1. C&#xE0;i &#x111;&#x1EB7;t WPA Supplicant</h2>
-<p>Phi&#xEA;n b&#x1EA3;n m&#x1EDB;i s&#x1EBD; kh&#xF4;ng th&#x1EC3; k&#x1EBF;t n&#x1ED1;i v&#xE0;o m&#x1EA1;ng c&#x1EE7;a &#x110;H-FPT,
-c&#x1EA7;n c&#xE0;i &#x111;&#x1EB7;t b&#x1EA3;n c&#x169; h&#x1A1;n t&#x1EA1;i <a href="https://drive.google.com/open?id=1b2g3TPX12x4dwUrdpxARrZFveI2obdo0" target="_blank">&#x111;&#xE2;y</a>.</p>
-<pre><code>sudo dpkg -i wpa*.deb
-</code></pre><h2 id="2-b&#x1ECF;-qua-c&#x1EAD;p-nh&#x1EAD;t-wpa-supplicant">2. B&#x1ECF; qua c&#x1EAD;p nh&#x1EAD;t WPA Supplicant</h2>
-<p>&#x110;&#x1EC3; lu&#xF4;n gi&#x1EEF; b&#x1EA3;n c&#x169; n&#xE0;y trong m&#xE1;y t&#xED;nh.</p>
-<pre><code>sudo apt-mark hold wpasupplicant
-</code></pre><h3 id="3-t&#x1EA1;o-network-profile">3. T&#x1EA1;o network profile</h3>
+                                <h1 id="ph&#xE1;t-tri&#x1EC3;n-tr&#xEA;n-windows">Ph&#xE1;t tri&#x1EC3;n tr&#xEA;n Windows</h1>
+<h2 id="1-c&#xE0;i-&#x111;&#x1EB7;t-package-manager">1. C&#xE0;i &#x111;&#x1EB7;t package manager</h2>
+<ul>
+<li>S&#x1EED; d&#x1EE5;ng CMD ho&#x1EB7;c PowerShell</li>
+<li>N&#xEA;n d&#xF9;ng CMD v&#xEC; &#x111;&#x1A1;n gi&#x1EA3;n v&#xE0; ch&#x1EA1;y nhanh h&#x1A1;n</li>
+<li>Tuy nhi&#xEA;n PowerShell r&#x1EA5;t m&#x1EA1;nh m&#x1EBD; v&#xE0; c&#x1EA7;n thi&#x1EBF;t n&#x1EBF;u chuy&#xEA;n Windows</li>
+<li>M&#x1EDF; CMD v&#x1EDB;i quy&#x1EC1;n admin (chu&#x1ED9;t ph&#x1EA3;i Run As Administrator))</li>
+<li><a href="https://chocolatey.org/docs/installation" target="_blank">https://chocolatey.org/docs/installation</a></li>
+</ul>
+<h2 id="2-c&#xE0;i-&#x111;&#x1EB7;t-c&#xE1;c-c&#xF4;ng-c&#x1EE5;-c&#x1EA7;n-thi&#x1EBF;t">2. C&#xE0;i &#x111;&#x1EB7;t c&#xE1;c c&#xF4;ng c&#x1EE5; c&#x1EA7;n thi&#x1EBF;t</h2>
+<ul>
+<li>S&#x1EED; d&#x1EE5;ng l&#x1EC7;nh <code>choco install</code></li>
+<li>Th&#xEA;m <code>-y</code> &#x111;&#x1EC3; t&#x1EF1; &#x111;&#x1ED9;ng ch&#x1EA5;p nh&#x1EAD;n c&#xE2;u h&#x1ECF;i v&#x1EC1; th&#x1ECF;a thu&#x1EAD;n c&#xE0;i &#x111;&#x1EB7;t</li>
+<li>Sau khi c&#xE0;i &#x111;&#x1EB7;t d&#xF9;ng l&#x1EC7;nh refreshenv &#x111;&#x1EC3; s&#x1EED; d&#x1EE5;ng &#x1EE9;ng d&#x1EE5;ng &#x111;&#xE3; c&#xE0;i <br>
+CMD s&#x1EBD; &#x111;&#x1ECD;c l&#x1EA1;i bi&#x1EBF;n m&#xF4;i tr&#x1B0;&#x1EDD;ng Path</li>
+<li>C&#xE0;i &#x111;&#x1EB7;t: cmake, msys2</li>
+<li>V&#xED; d&#x1EE5;: <br>
+<code>choco install -y cmake</code> <br>
+<code>refresh env</code> <br>
+<code>cmake --version</code></li>
+</ul>
+<h2 id="3-msys2">3. MSYS2</h2>
+<ul>
+<li>L&#x1EC7;nh <code>pacman -Ss t&#xEA;n_package</code> &#x111;&#x1EC3; t&#xEC;m ki&#x1EBF;m</li>
+<li>L&#x1EC7;nh <code>pacman -S t&#xEA;n_package</code> &#x111;&#x1EC3; c&#xE0;i &#x111;&#x1EB7;t</li>
+<li>L&#x1EC7;nh <code>pacman -R t&#xEA;n_package</code> &#x111;&#x1EC3; g&#x1EE1; c&#xE0;i &#x111;&#x1EB7;t</li>
+<li>Ch&#x1EC9; s&#x1EED; d&#x1EE5;ng c&#xE1;c package d&#xE0;nh cho MinGW64 (64-bit)</li>
+<li>V&#xED; d&#x1EE5;: <br>
+<code>choco install -y msys2</code> <br>
+<code>refreshenv</code> <br>
+<code>mingw64</code> <br>
+chuy&#x1EC3;n qua shell Mingw64 g&#xF5;: <br>
+<code>pacman -Ss gcc</code> <br>
+<code>pacman -S mingw-w64-x86_64-gcc</code></li>
+<li>C&#xE0;i th&#xEA;m c&#xE1;c package sau: mingw32-make</li>
+<li>Copy mingw32-make.exe th&#xE0;nh make.exe &#x111;&#x1EC3; ch&#x1EA1;y Makefile: <br>
+<code>which mingw32-make</code> <br>
+<code>cp output_c&#x1EE7;a_l&#x1EC7;nh_tr&#xEA;n output_c&#x1EE7;a_l&#x1EC7;nh_tr&#xEA;n_thay_mingw32-make_th&#xE0;nh_make</code></li>
+</ul>
+<h2 id="4-s&#x1EED;-d&#x1EE5;ng-c&#xF4;ng-c&#x1EE5;-c&#x1EE7;a-msys2-trong-cmd">4. S&#x1EED; d&#x1EE5;ng c&#xF4;ng c&#x1EE5; c&#x1EE7;a MSYS2 trong CMD</h2>
+<ul>
+<li>Thay v&#xEC; ph&#x1EA3;i v&#xE0;o mingw64 shell g&#xF5; l&#x1EC7;nh, c&#xF3; th&#x1EC3; g&#xF5; trong CMD</li>
+<li>Th&#xEA;m &#x111;&#x1B0;&#x1EDD;ng d&#x1EAB;n c&#x1EE7;a th&#x1B0; m&#x1EE5;c bin (mingw64) v&#xE0;o bi&#x1EBF;n m&#xF4;i tr&#x1B0;&#x1EDD;ng Path</li>
+<li>Ki&#x1EC3;m tra tr&#xEA;n CMD: <br>
+cmake --version <br>
+g++ -v <br>
+make -v</li>
+</ul>
 
                                 
                                 </section>
@@ -240,10 +280,14 @@ c&#x1EA7;n c&#xE0;i &#x111;&#x1EB7;t b&#x1EA3;n c&#x169; h&#x1A1;n t&#x1EA1;i <a
 
             
                 
-                <a href="Windows_dev.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Phát triển trên Windows">
+                <a href="Thu_thach.html" class="navigation navigation-prev " aria-label="Previous page: 1.1 Thử thách">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Linux_network.html" class="navigation navigation-next " aria-label="Next page: Kết nối mạng DH-FPT trên Linux">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -252,7 +296,7 @@ c&#x1EA7;n c&#xE0;i &#x111;&#x1EB7;t b&#x1EA3;n c&#x169; h&#x1A1;n t&#x1EA1;i <a
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Kết nối mạng DH-FPT trên Linux","level":"1.4","depth":1,"previous":{"title":"Phát triển trên Windows","level":"1.3","depth":1,"path":"doc/Windows_dev.md","ref":"doc/Windows_dev.md","articles":[]},"dir":"ltr"},"config":{"plugins":[""],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CppGeeks Core Guide v1.0.0","language":"vi","gitbook":"*"},"file":{"path":"doc/Linux_network.md","mtime":"2018-09-10T09:48:22.445Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-16T06:51:54.531Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Phát triển trên Windows","level":"1.3","depth":1,"next":{"title":"Kết nối mạng DH-FPT trên Linux","level":"1.4","depth":1,"path":"doc/Linux_network.md","ref":"doc/Linux_network.md","articles":[]},"previous":{"title":"1.1 Thử thách","level":"1.2.1","depth":2,"path":"doc/Thu_thach.md","ref":"doc/Thu_thach.md","articles":[]},"dir":"ltr"},"config":{"plugins":[""],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"serif","size":2},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CppGeeks Core Guide v1.0.0","language":"vi","gitbook":"*"},"file":{"path":"doc/Windows_dev.md","mtime":"2018-09-16T06:51:37.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-16T06:51:54.531Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
