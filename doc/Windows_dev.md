@@ -30,7 +30,7 @@ CMD sẽ đọc lại biến môi trường Path
 chuyển qua shell MinGW64 gõ: <br />
 `pacman -Ss gcc` <br />
 `pacman -S mingw-w64-x86_64-gcc`
-- Cài thêm các package sau: `mingw32-make`
+- Cài thêm package: `mingw-w64-x86_64-make`
 - Copy `mingw32-make.exe` thành `make.exe` để chạy `Makefile`: <br />
 `which mingw32-make` <br />
 `cp output_của_lệnh_trên output_của_lệnh_trên_thay_mingw32-make_thành_make`
